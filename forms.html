@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Votre choix de Film</title>
+    </head>
+    <body>
+    
+    <h1>Votre choix de Film</h1>
+    
+    <form action="Film.php">
+        Titre:
+        <input type="text" name="titre">
+        Années:
+        <input type="text" name="annee" value="2008">
+        <p>
+        Comédie:
+        <input type="checkbox" name="genre" value="c">
+        Drame:
+        <input type="checkbox" name="genre" value="d">
+        Histoire:
+        <input type="checkbox" name="genre" value="h">
+        Suspense:
+        <input type="checkbox" name="genre" value="s">
+        </p>
+        <p>
+        France:
+        <input type="radio" name="pays" value="fr" checked>
+        États-Unis:
+        <input type="radio" name="pays" value="us">
+        Allemagne:
+        <input type="radio" name="pays" value="de">
+        Japon:
+        <input type="radio" name="pays" value="jp">
+        </p>
+        <p>
+        Affiche du film:
+        <input type="file" name="affiche">
+        </p>
+        <p>
+        Metteur en scène :
+        <select name= "realisateur" size = "3">
+        <option value = "1">Alfred Hitchcock</option>
+        <option value = "2">Maurice Pialat </option>
+        <option value = "3" selected = "1">Quentin Tarantino</option>
+        <option value = "4">Akira Kurosawa</option>
+        <option value = "5">John Woo</option>
+        <option value = "6">Tim Burton</option>
+        </select>
+        <br/>
+        <p>
+        Résumé:
+        <textarea type="text" name="Résumé" cols="30" rows="3">Résumé du film
+        </textarea>
+        </p>
+      	<input type="submit" value="Valider">
+        <input type="reset" value="Annuler">
+	</form>
+    </body>
+</html>
